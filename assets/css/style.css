@@ -505,6 +505,24 @@ section {
   color: #6c5ce7;
 }
 
+/* ======= Easter Egg ======= */
+.easter-egg {
+  margin-top: 60px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.easter-egg.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.easter-egg img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
 /* ======= Footer ======= */
 footer {
   padding: 40px 0;
