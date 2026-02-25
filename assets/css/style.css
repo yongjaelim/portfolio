@@ -471,6 +471,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-bottom: 40px;
 }
 .contact-item {
   display: flex;
@@ -507,7 +508,8 @@ section {
 
 /* ======= Easter Egg ======= */
 .easter-egg {
-  margin-top: 100px;
+  margin-top: 0;
+  padding-bottom: 60px;
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
