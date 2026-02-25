@@ -385,10 +385,14 @@
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
 
-      // 스크롤 올리면 이스터에그 숨김
+      // 스크롤 올리면 이스터에그 숨김 (Contact 섹션 벗어났을 때만)
       const egg = document.querySelector('.easter-egg');
-      if (egg && scrollY + windowHeight < docHeight - 50) {
-        egg.classList.remove('visible');
+      const contactSection = document.getElementById('contact');
+      if (egg && contactSection) {
+        const contactTop = contactSection.offsetTop - 200;
+        if (scrollY < contactTop) {
+          egg.classList.remove('visible');
+        }
       }
 
       if (scrollY + windowHeight >= docHeight - 10) {
