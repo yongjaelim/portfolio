@@ -364,13 +364,15 @@
         clearTimeout(scrollTimer);
         scrollTimer = setTimeout(() => { clickedLink = false; }, 800);
 
-        // Easter egg: Contact 클릭 시 이미지 표시
+        // Easter egg: Contact 클릭 시 이미지 표시, 다른 탭 클릭 시 숨김
         const egg = document.querySelector('.easter-egg');
         if (link.getAttribute('href') === '#contact' && egg) {
           setTimeout(() => {
             egg.classList.add('visible');
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
           }, 300);
+        } else if (egg) {
+          egg.classList.remove('visible');
         }
       });
     });
@@ -382,6 +384,12 @@
       const scrollY = window.pageYOffset;
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
+
+      // 스크롤 올리면 이스터에그 숨김
+      const egg = document.querySelector('.easter-egg');
+      if (egg && scrollY + windowHeight < docHeight - 50) {
+        egg.classList.remove('visible');
+      }
 
       if (scrollY + windowHeight >= docHeight - 10) {
         document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
