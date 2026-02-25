@@ -347,14 +347,30 @@
       }
     });
 
-    // Active nav link on scroll
+    // Active nav link — click + scroll hybrid
     const sections = document.querySelectorAll('section[id]');
+    let scrollTimer = null;
+    let clickedLink = false;
+
+    // 클릭 시 즉시 active 처리
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        clickedLink = true;
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(() => { clickedLink = false; }, 800);
+      });
+    });
+
+    // 스크롤 시 active 감지 (클릭 직후엔 무시)
     window.addEventListener('scroll', () => {
+      if (clickedLink) return;
+
       const scrollY = window.pageYOffset;
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
 
-      // 페이지 하단 도달 시 마지막 섹션(Contact) 활성화
       if (scrollY + windowHeight >= docHeight - 10) {
         document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
         const lastSection = sections[sections.length - 1];
@@ -381,5 +397,3 @@
 
 </body>
 </html>
-
-
