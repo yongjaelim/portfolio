@@ -367,7 +367,10 @@
         // Easter egg: Contact 클릭 시 이미지 표시
         const egg = document.querySelector('.easter-egg');
         if (link.getAttribute('href') === '#contact' && egg) {
-          setTimeout(() => { egg.classList.add('visible'); }, 400);
+          setTimeout(() => {
+            egg.classList.add('visible');
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }, 300);
         }
       });
     });
