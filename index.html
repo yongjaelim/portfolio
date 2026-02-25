@@ -313,6 +313,9 @@
             </div>
           </div>
         </div>
+        <div class="easter-egg">
+          <img src="assets/img/bg.png" alt="">
+        </div>
       </div>
     </section>
 
@@ -360,6 +363,12 @@
         link.classList.add('active');
         clearTimeout(scrollTimer);
         scrollTimer = setTimeout(() => { clickedLink = false; }, 800);
+
+        // Easter egg: Contact 클릭 시 이미지 표시
+        const egg = document.querySelector('.easter-egg');
+        if (link.getAttribute('href') === '#contact' && egg) {
+          setTimeout(() => { egg.classList.add('visible'); }, 400);
+        }
       });
     });
 
