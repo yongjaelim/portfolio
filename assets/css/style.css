@@ -423,6 +423,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .timeline .dates { margin-block: 5px 2px; }
 .timeline h4:not(.school) { margin-bottom: 4px; }
 .timeline .job-location { color: var(--muted); font-size: 14px; }
+.job-details { list-style: disc outside; padding-left: 1.1em; }
+.job-details li + li { margin-top: 4px; }
 
 .education { margin-top: 42px; }
 
