@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yongjae Lim — 5G Packet Core Developer</title>
-  <meta content="5G Packet Core Software Developer at Ericsson. Specializing in SMF/PGW control plane, C++, and mobile development." name="description">
+  <title>Yongjae Lim — Software Developer &amp; SushiJaro Creator</title>
+  <meta name="description" content="Yongjae Lim, a packet core software developer at Ericsson and the independent creator of SushiJaro. Selected iOS, web, and data projects.">
   <meta content="5G, packet core, SMF, PGW, C++, Swift, developer, Ericsson" name="keywords">
 
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://sushimara.info/portfolio/">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -21,14 +21,14 @@
   <nav id="navbar" class="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">YL</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
         <i class="bi bi-list"></i>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-social">
@@ -43,10 +43,10 @@
     <div class="hero-content">
       <p class="hero-label">5G Packet Core Developer at <strong>Ericsson</strong></p>
       <h1>Yongjae Lim</h1>
-      <p class="hero-sub">Building software that connects billions of people.<br>
+      <p class="hero-sub">Packet core software at Ericsson. Independent developer of SushiJaro.<br>
         <span class="hero-tags">C++ · Swift · Python · SMF · PGW · 3GPP</span>
       </p>
-      <a href="#about" class="hero-cta">Learn more <i class="bi bi-arrow-down"></i></a>
+      <a href="#sushijaro" class="hero-cta">See SushiJaro <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
     </div>
   </section>
 
@@ -61,11 +61,8 @@
             <img src="assets/img/profile-img.jpg" alt="Yongjae Lim">
           </div>
           <div class="about-text">
-            <p>Software developer specializing in 5G packet core systems at Ericsson, Seoul.
-              I build and maintain control plane software (SMF/PGW) that handles billions of mobile sessions,
-              implementing 3GPP standards for next-generation networks.</p>
-            <p>Outside of work, I enjoy building mobile apps and exploring AI-powered solutions.
-              Virginia Tech CS graduate (Magna Cum Laude) with experience spanning telecom, automotive, and mobile development.</p>
+            <p>I develop 5G packet core software at Ericsson in Seoul, working on the SMF and PGW control plane in C++. My work includes implementing 3GPP features and validating signaling flows across 4G and 5G.</p>
+            <p>I build independent products for iOS and the web, including SushiJaro and VillaGates. I graduated magna cum laude from Virginia Tech with a B.S. in Computer Science.</p>
             <div class="about-details">
               <div class="detail-item">
                 <span class="detail-label">Current Role</span>
@@ -85,6 +82,92 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Projects ======= -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <article class="featured-project" id="sushijaro">
+          <div class="featured-content">
+            <p class="featured-platform">Independent project · iOS and web</p>
+            <h3>SushiJaro <span lang="ko">스시자로</span></h3>
+            <p>I built SushiJaro to make it easier to compare published prices and visit information from Japanese clinics that prescribe Mounjaro. I developed the SwiftUI app and web interface, the data pipeline that normalizes price tables, and the backend that powers the clinic directory and community.</p>
+            <dl class="launch-results">
+              <div>
+                <dt>#9</dt>
+                <dd>Korean App Store<br>Medical · Free, launch day</dd>
+              </div>
+              <div>
+                <dt>#1</dt>
+                <dd>Japan Mounjaro information apps<br>Launch-day comparison</dd>
+              </div>
+            </dl>
+            <p class="rank-method">November 17, 2026 (KST). The #1 result comes from comparing public listings in the Korean App Store’s top 100 free Medical apps that offered pricing and visit information for Japanese clinics prescribing Mounjaro.</p>
+            <div class="featured-links">
+              <a href="https://apps.apple.com/kr/app/id6835291281">View on the App Store</a>
+              <a href="https://sushimara.info/">Visit SushiJaro <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="press-mention">
+              <h4>Joongboo Ilbo <span><time datetime="2026-11-20">November 20, 2026</time></span></h4>
+              <p>The newspaper covered SushiJaro’s clinic listings and price comparison in its reporting on overseas prescriptions and medication safety.</p>
+              <a href="https://www.joongboo.com/news/articleView.html?idxno=363743060">Read the coverage <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <figure class="featured-screen">
+            <img src="assets/img/sushijaro-price-comparison.jpg" alt="SushiJaro’s iPhone screen showing a list of Japanese clinics with prices" width="552" height="1200" loading="lazy">
+          </figure>
+        </article>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <h4>VillaGates</h4>
+            <p class="project-tech">Next.js · FastAPI · PostgreSQL/PostGIS · Python</p>
+            <p>A redevelopment research platform for the Seoul metropolitan area, combining public project records, property transactions, policy, and local news in one project view.</p>
+            <a href="https://villagates.vercel.app" class="project-link">Visit VillaGates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-badge">In Progress</div>
+            <h4>BodyTracker — AI Body Composition Analyzer</h4>
+            <p class="project-tech">SwiftUI · SwiftData · Swift Charts · FastAPI · GPT-4o Vision</p>
+            <ul>
+              <li>iOS app for daily body composition tracking with AI-powered health analysis.</li>
+              <li>Three input methods: manual entry, photo analysis (InBody/app screenshots via GPT-4o Vision), and HealthKit.</li>
+              <li>GLP-1 medication tracking with muscle retention rate monitoring and side effect logging.</li>
+              <li>AI-generated reports (daily/weekly/monthly/quarterly) with personalized recommendations.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h4>COVID Travel Restriction App</h4>
+            <p class="project-tech">iOS · SwiftUI · REST APIs · Core Data</p>
+            <ul>
+              <li>Built iOS app displaying state-by-state COVID travel restrictions using REST APIs and Core Data.</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1e3l3QKy-dFr5SyhDL9fQWW5-YHJfPWKP/view?usp=sharing" class="project-link" target="_blank">Project Report <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <div class="project-card">
+            <h4>VTURCS Web Application</h4>
+            <p class="project-tech">MEAN Stack · Node.js · MongoDB</p>
+            <ul>
+              <li>Modernized the university's undergraduate research webapp with file upload and multimedia viewer.</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1JucTPF64Q-kj1-QrtOC2w68WRsnZxDgk/view?usp=sharing" class="project-link" target="_blank">Project Poster <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <div class="project-card">
+            <h4>Surrogate Driving Platform</h4>
+            <p class="project-tech">Java EE · MySQL</p>
+            <ul>
+              <li>Full-stack webapp connecting customers with surrogate drivers, built with Java EE and MySQL.</li>
+            </ul>
+            <a href="https://github.com/MashalSJ/SurrogateDriving2" class="project-link" target="_blank">GitHub <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -165,17 +248,6 @@
               </div>
             </div>
 
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Jan 2023 — Feb 2023</span>
-                <h4>Mobile Software Developer</h4>
-                <p class="timeline-company">Fasoo, Seoul, South Korea</p>
-                <ul>
-                  <li>Built cross-platform mobile messenger application using Flutter/Dart with end-to-end encryption support.</li>
-                </ul>
-              </div>
-            </div>
 
             <div class="timeline-item">
               <div class="timeline-dot"></div>
@@ -237,55 +309,6 @@
       </div>
     </section>
 
-    <!-- ======= Projects ======= -->
-    <section id="projects" class="section-alt">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="project-badge">In Progress</div>
-            <h4>BodyTracker — AI Body Composition Analyzer</h4>
-            <p class="project-tech">SwiftUI · SwiftData · Swift Charts · FastAPI · GPT-4o Vision</p>
-            <ul>
-              <li>iOS app for daily body composition tracking with AI-powered health analysis.</li>
-              <li>Three input methods: manual entry, photo analysis (InBody/app screenshots via GPT-4o Vision), and HealthKit.</li>
-              <li>GLP-1 medication tracking with muscle retention rate monitoring and side effect logging.</li>
-              <li>AI-generated reports (daily/weekly/monthly/quarterly) with personalized recommendations.</li>
-            </ul>
-          </div>
-
-          <div class="project-card">
-            <h4>COVID Travel Restriction App</h4>
-            <p class="project-tech">iOS · SwiftUI · REST APIs · Core Data</p>
-            <ul>
-              <li>Built iOS app displaying state-by-state COVID travel restrictions using REST APIs and Core Data.</li>
-            </ul>
-            <a href="https://drive.google.com/file/d/1e3l3QKy-dFr5SyhDL9fQWW5-YHJfPWKP/view?usp=sharing" class="project-link" target="_blank">Project Report <i class="bi bi-arrow-up-right"></i></a>
-          </div>
-
-          <div class="project-card">
-            <h4>VTURCS Web Application</h4>
-            <p class="project-tech">MEAN Stack · Node.js · MongoDB</p>
-            <ul>
-              <li>Modernized the university's undergraduate research webapp with file upload and multimedia viewer.</li>
-            </ul>
-            <a href="https://drive.google.com/file/d/1JucTPF64Q-kj1-QrtOC2w68WRsnZxDgk/view?usp=sharing" class="project-link" target="_blank">Project Poster <i class="bi bi-arrow-up-right"></i></a>
-          </div>
-
-          <div class="project-card">
-            <h4>Surrogate Driving Platform</h4>
-            <p class="project-tech">Java EE · MySQL</p>
-            <ul>
-              <li>Full-stack webapp connecting customers with surrogate drivers, built with Java EE and MySQL.</li>
-            </ul>
-            <a href="https://github.com/MashalSJ/SurrogateDriving2" class="project-link" target="_blank">GitHub <i class="bi bi-arrow-up-right"></i></a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ======= Contact ======= -->
     <section id="contact">
       <div class="container">
@@ -323,101 +346,11 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Yongjae Lim</p>
+      <p>&copy; 2026 Yongjae Lim</p>
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    document.getElementById('navToggle').addEventListener('click', function() {
-      document.getElementById('navLinks').classList.toggle('active');
-    });
-
-    // Close mobile nav on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('navLinks').classList.remove('active');
-      });
-    });
-
-    // Navbar background on scroll
-    window.addEventListener('scroll', function() {
-      const nav = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    });
-
-    // Active nav link — click + scroll hybrid
-    const sections = document.querySelectorAll('section[id]');
-    let scrollTimer = null;
-    let clickedLink = false;
-
-    // 클릭 시 즉시 active 처리
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        clickedLink = true;
-        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-        clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(() => { clickedLink = false; }, 800);
-
-        // Easter egg: Contact 클릭 시 이미지 표시, 다른 탭 클릭 시 숨김
-        const egg = document.querySelector('.easter-egg');
-        if (link.getAttribute('href') === '#contact' && egg) {
-          setTimeout(() => {
-            egg.classList.add('visible');
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-          }, 300);
-        } else if (egg) {
-          egg.classList.remove('visible');
-        }
-      });
-    });
-
-    // 스크롤 시 active 감지 (클릭 직후엔 무시)
-    window.addEventListener('scroll', () => {
-      if (clickedLink) return;
-
-      const scrollY = window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const docHeight = document.documentElement.scrollHeight;
-
-      // 스크롤 올리면 이스터에그 숨김 (Contact 섹션 벗어났을 때만)
-      const egg = document.querySelector('.easter-egg');
-      const contactSection = document.getElementById('contact');
-      if (egg && contactSection) {
-        const contactTop = contactSection.offsetTop - 200;
-        if (scrollY < contactTop) {
-          egg.classList.remove('visible');
-        }
-      }
-
-      if (scrollY + windowHeight >= docHeight - 10) {
-        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-        const lastSection = sections[sections.length - 1];
-        const link = document.querySelector('.nav-links a[href="#' + lastSection.id + '"]');
-        if (link) link.classList.add('active');
-        return;
-      }
-
-      sections.forEach(section => {
-        const top = section.offsetTop - 100;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-        const link = document.querySelector('.nav-links a[href="#' + id + '"]');
-        if (link) {
-          if (scrollY >= top && scrollY < top + height) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/portfolio.js" defer></script>
 
 </body>
 </html>

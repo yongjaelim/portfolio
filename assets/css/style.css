@@ -399,6 +399,147 @@ section {
 }
 
 /* ======= Projects ======= */
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 0.95fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  margin-bottom: 28px;
+  padding: clamp(24px, 4.7vw, 54px);
+  border-radius: 24px;
+  background: #153a32;
+  color: #f6f8f4;
+}
+
+.featured-platform {
+  color: #c0d8c5;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.featured-content h3 {
+  margin: 5px 0 13px;
+  font-size: clamp(2.1rem, 5vw, 3.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.featured-content h3 span {
+  display: inline-block;
+  margin-left: 0.25em;
+  color: #c0d8c5;
+  font-size: 0.42em;
+  letter-spacing: 0;
+  vertical-align: 0.17em;
+}
+
+.launch-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 24px 0 11px;
+}
+
+.launch-results > div {
+  padding: 15px 16px;
+  border: 1px solid #5a776a;
+  border-radius: 12px;
+}
+
+.launch-results dt {
+  color: #dbf18d;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.launch-results dd {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.46;
+}
+
+.rank-method,
+.press-mention h4 span {
+  color: #c0d8c5;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.featured-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 19px;
+}
+
+.featured-content a {
+  color: #e6f7ac;
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+}
+
+.featured-content a:hover,
+.featured-content a:focus-visible {
+  color: #fff;
+}
+
+.press-mention {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid #5a776a;
+}
+
+.press-mention h4 {
+  font-size: 1rem;
+}
+
+.press-mention h4 span {
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.press-mention p {
+  margin: 4px 0 8px;
+  font-size: 0.9rem;
+}
+
+.featured-screen {
+  justify-self: center;
+  width: min(100%, 248px);
+  padding: 6px;
+  border: 1px solid #668177;
+  border-radius: 25px;
+  background: #102822;
+  box-shadow: 0 18px 35px #0a2a2380;
+}
+
+.featured-screen img {
+  width: 100%;
+  height: auto;
+  border-radius: 19px;
+}
+
+@media (max-width: 700px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .launch-results > div {
+    padding-inline: 10px;
+  }
+
+  .press-mention h4 span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
