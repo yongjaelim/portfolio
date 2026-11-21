@@ -32,3 +32,13 @@ const queueNavigationUpdate = () => {
 window.addEventListener('scroll', queueNavigationUpdate, { passive: true });
 window.addEventListener('resize', queueNavigationUpdate);
 updateNavigation();
+
+const languageLink = document.querySelector('.language-switch a');
+const updateLanguageLink = () => {
+  const destination = new URL(languageLink.href);
+  destination.hash = window.location.hash;
+  languageLink.href = destination.href;
+};
+
+window.addEventListener('hashchange', updateLanguageLink);
+updateLanguageLink();
